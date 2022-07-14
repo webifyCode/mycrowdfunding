@@ -9,7 +9,10 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="crowdfund.css">
   <link rel="stylesheet" href="crowdfundlarge.css" type="text/css" media="all" />
-  <script type="text/javascript" charset="utf-8" src="jquery.min.js"></script>
+  <script src="jquery.min.js"></script>
+  
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
   <title>Frontend Mentor | Crowdfunding product page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -36,7 +39,7 @@
             </div>
             <label for="openMenu" id="hamburger">
               <img src="images/icon-hamburger.svg" alt=""></label>
-            <input type="checkbox" name="" id="openMenu">
+            <input type="checkbox" id="openMenu">
 
 
             <div id="navlist">
@@ -51,19 +54,18 @@
               </div>
 
               <ul>
-                <div>
+                
                   <li><a>About</a></li>
                   <li><a>Discover</a></li>
                   <li><a>Get Started</a></li>
                 </div>
               </ul>
-            </div>
 
-            <div id="largeNav">
+            <ul id="largeNav">
               <li><a>About</a></li>
               <li><a>Discover</a></li>
               <li><a>Get Started</a></li>
-            </div>
+            </ul>
 
           </div>
 
@@ -111,7 +113,7 @@
 
                         <div>
                           <label for="pledgeselect">
-                            <h4>Pledge with no reward</h4>
+                            <span>Pledge with no reward</span>
                           </label>
                         </div>
                       </div>
@@ -139,7 +141,7 @@
 
                         <div>
                           <label for="pledgeselectone">
-                            <h4>Bamboo Stand</h4>
+                            <span>Bamboo Stand</span>
                           </label>
                           <p class="pledge">
                             Pledge $25 or more
@@ -195,7 +197,7 @@
 
                         <div>
                           <label for="pledgeselecttwo">
-                            <h4>Black Edition Stand</h4>
+                            <span>Black Edition Stand</span>
                           </label>
                           <p class="pledge">
                             Pledge $75 or more
@@ -253,7 +255,7 @@
 
                         <div>
                           <label for="pledgeselectthree">
-                            <h4>Mahogany Special Edition</h4>
+                            <span>Mahogany Special Edition</span>
                           </label>
                           <p class="pledge">
                             Pledge $200 or more
@@ -318,7 +320,7 @@
           </div>
 
           <div class="bookMark"> <svg width="56" height="56" xmlns="http://www.w3.org/2000/svg">
-              <g fill="none" fill-rule="oddeven">
+              <g fill="none" fill-rule="evenodd">
                 <circle cx="28" cy="28" r="28" />
                 <path d="M23 19v18l5-5.058L33 37V19z" />
               </g>
@@ -330,11 +332,11 @@
       <div id="stats">
         <div>
           <div class="data">
-            $89,914 <span>of $100,000 backed</span><span id="dash"></span>
+            $89,914 <span>of $100,000 backed</span><span class="dash"></span>
           </div>
           <div class="data">
             5,007 <span>total backers</span>
-            <span id="dash"></span>
+            <span class="dash"></span>
           </div>
           <div class="data">
             56 <span>days left</span>
@@ -430,7 +432,7 @@
     </main>
 
   </div>
-  <script src="crowdfund.js" type="text/javascript" charset="utf-8"></script>
+  <script src="crowdfund.js" ></script>
 </body>
 
 </html>

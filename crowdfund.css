@@ -23,7 +23,7 @@ h1 {
   margin-top: 0;
 }
 
-#close, #navClose, #hamburger, .got, .main, .secondary, .bookMark, #largeNav li, label h4, #navlist ul a, input {
+#close, #navClose, #hamburger, .got, .main, .secondary, .bookMark, #largeNav li, label span, #navlist ul a, input {
   cursor: pointer;
 }
 
@@ -95,14 +95,11 @@ h1 {
   padding: 1em;
   margin: 0;
   line-height: 3em;
-}
-
-#navlist ul div {
   background-color: white;
   border-radius: 0.3rem;
 }
 
-#navlist ul div li {
+#navlist ul li {
   padding: 1em 2em;
   font-weight: bold;
 }
@@ -354,16 +351,17 @@ bac
   margin: 1em;
   margin-right: 2em;
 }
-#back h4 {
+#back label span {
+  font-weight: bold;
   margin: 1em 0;
   transition: all 200ms ease 50ms;
 }
 
-#back h4:hover {
+#back label span:hover {
   color: #009d90;
 }
 
-#mahogany_back h4:hover {
+#mahogany_back label span:hover {
   color: black;
 }
 
